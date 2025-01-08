@@ -1,4 +1,4 @@
-# API REST Pizzas Napoli
+# API REST Pizzas Napoli 🍕
 
 To install dependencies:
 
@@ -13,6 +13,8 @@ bun run dev
 ```
 
 open <http://localhost:3000>
+
+![Pizza](./assets/pizza.png)
 
 --
 

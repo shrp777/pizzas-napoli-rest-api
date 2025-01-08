@@ -1,7 +1,7 @@
 meta {
   name: Welcome
   type: http
-  seq: 2
+  seq: 1
 }
 
 get {
@@ -11,5 +11,7 @@ get {
 }
 
 assert {
-  res.body.message: eq Welcome to Pizzas Napoli API
+  res.body.message: eq Pizzas Napoli API
+  res.body: isJson
+  res.status: eq 200
 }
