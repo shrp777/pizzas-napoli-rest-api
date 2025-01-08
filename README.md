@@ -1,18 +1,22 @@
-# API REST Pizzas Napoli 🍕
+# Pizzas Napoli 🍕 REST API
 
-To install dependencies:
+__API REST__ proposant des fonctionnalités basiques de type CRUD, développée avec __Hono__, __Bun__ et __TypeScript__.
+
+## Commandes utiles
+
+Installation des dépendances NPM :
 
 ```sh
 bun install
 ```
 
-To run:
+Démarrage de l'API :
 
 ```sh
 bun run dev
 ```
 
-open <http://localhost:3000>
+Adresse locale de l'API : <http://localhost:3000>
 
 ![Pizza](./assets/pizza.png)
 
