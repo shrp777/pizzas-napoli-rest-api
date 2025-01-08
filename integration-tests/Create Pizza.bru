@@ -13,7 +13,14 @@ post {
 body:json {
   {
     "name": "Quattro Stagioni",
-    "ingredients": ["tomate","jambon","mozzarella","champignons","coeurs d'artichaut","olives"],
+    "ingredients": [
+      "tomate",
+      "jambon",
+      "mozzarella",
+      "champignons",
+      "coeurs d'artichaut",
+      "olives"
+    ],
     "price": 12
   }
 }
@@ -29,5 +36,5 @@ assert {
 }
 
 tests {
-  test("id inside body should be equal to id inside header location", ()=> expect(res.body.pizza.id).to.equal(Number(res.getHeader("location").split("/").reverse()[0])))
+  test("id inside HTTP Response body should be equal to id inside HTTP Response header location", ()=> expect(res.body.pizza.id).to.equal(Number(res.getHeader("location").split("/").reverse()[0])))
 }
