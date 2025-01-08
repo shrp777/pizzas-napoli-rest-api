@@ -1,10 +1,10 @@
 # Pizzas Napoli 🍕 REST API
 
+*****************************************************
+------------> Projet modèle à compléter <------------
+*****************************************************
+
 __API REST__ proposant des fonctionnalités basiques de type CRUD, développée avec __Hono__, __Bun__ et __TypeScript__.
-
-## Tests d'intégration
-
-Les tests d'intégration et assertions sont réalisés avec le logiciel __Bruno__ (cf. ./integration-tests).
 
 ## Commandes utiles
 
