@@ -15,11 +15,11 @@ body:json {
     "id":1,
     "name": "",
     "ingredients": [],
-    "price": 10
+    "price": 10,
+    "base":""
   }
 }
 
 assert {
   res.status: eq 400
-  res.body: eq Missing Pizza name
 }

@@ -17,7 +17,7 @@ assert {
 
 tests {
   
-  test("HTTP body Response status code should be equal to HTTP Response status code", ()=> 
+  test("pizza id in URL should be equal to pizza id in HTTP Response body", ()=> 
     expect(res.getBody().pizza.id).to.equal(Number(req.url.split("/").at(-1)))
   );
   
