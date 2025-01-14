@@ -5,13 +5,14 @@ meta {
 }
 
 get {
-  url: http://localhost:3000/pizzas?base=Tomate
+  url: http://localhost:3000/pizzas?base=Tomate&gauffre=chocolat
   body: none
   auth: none
 }
 
 params:query {
   base: Tomate
+  gauffre: chocolat
   ~base: Crème
   ~base: Nature
 }
