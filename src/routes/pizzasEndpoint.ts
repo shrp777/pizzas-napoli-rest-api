@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { pizzas } from "../data";
 
-export const pizzasEndpoint = new Hono();
+const pizzasEndpoint = new Hono();
 
 pizzasEndpoint.get("/:id", (c) => {
   const id = c.req.param().id;
@@ -24,3 +24,5 @@ pizzasEndpoint.get("/", (c) => {
   //return c.json({ pizzas: [] });
   return c.json({ pizzas });
 });
+
+export default pizzasEndpoint;

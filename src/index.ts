@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 
-import { pizzasEndpoint } from "./routes/pizzasEndpoint";
+import pizzasEndpoint from "./routes/pizzasEndpoint";
 
 const app = new Hono();
 
