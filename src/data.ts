@@ -10,7 +10,7 @@ const margherita: Pizza = {
   base: "Tomate"
 };
 
-const Marinara: Pizza = {
+const marinara: Pizza = {
   id: 2,
   name: "Marinara",
   ingredients: ["tomate", "ail", "origan"],
@@ -18,7 +18,7 @@ const Marinara: Pizza = {
   base: "Tomate"
 };
 
-const QuattroFormaggi: Pizza = {
+const quattroFormaggi: Pizza = {
   id: 3,
   name: "Quattro Formaggi",
   ingredients: ["mozzarella", "gorgonzola", "parmesan", "chèvre"],
@@ -26,10 +26,12 @@ const QuattroFormaggi: Pizza = {
   base: "Crème"
 };
 
-const Rucola: Pizza = {
+const rucola: Pizza = {
   id: 4,
   name: "Rucola",
   ingredients: ["mozzarella", "rucola", "parmesan", "jambon cru"],
   price: 11.5,
   base: "Nature"
 };
+
+pizzas.push(margherita, marinara, quattroFormaggi, rucola);
