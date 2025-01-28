@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "TD API REST Pizzas Napoli (TS Hono)",
+  "name": "Pizzas Napoli REST API",
   "type": "collection",
   "ignore": [
     "node_modules",
