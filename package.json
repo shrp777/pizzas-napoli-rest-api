@@ -2,8 +2,8 @@
   "name": "pizzas-napoli",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "db:seedData": "bun run src/db/scripts/seedData.ts",
-    "db:createSchema": "bun run src/db/scripts/createSchema.ts"
+    "db:createSchema": "bun run src/db/scripts/createSchema.ts",
+    "db:seedData": "bun run src/db/scripts/seedData.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.4.2",
