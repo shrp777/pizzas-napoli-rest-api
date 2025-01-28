@@ -31,7 +31,8 @@ pizzasEndpoint.get("/", (c) => {
   }
 
   if (price) {
-    pizzas = pizzas.filter((p) => p.price === Number(price));
+    const priceNumber = Number(price);
+    pizzas = pizzas.filter((p) => p.price === priceNumber);
   }
 
   return c.json({ pizzas });
