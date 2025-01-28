@@ -22,10 +22,6 @@ pizzasEndpoint.get("/:id", (c) => {
 });
 
 pizzasEndpoint.get("/", (c) => {
-  const query = c.req.query();
-
-  const basePizza = query.base; //accès direct à la clé base (si elle existe)
-
   const { base, price } = c.req.query(); //création dynamique d'une variable base, par destructuration de l'objet retourné par c.req.query()
 
   let pizzas = pizzasCollection;
