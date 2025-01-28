@@ -4,8 +4,7 @@ import { connectDatabase, createSchema, seedData } from "./db/database";
 const app = new Hono();
 
 const db = connectDatabase();
-//createSchema(); // création des tables de données (désactiver après initialisation)
-//seedData(); // remplissage de la base de données (désactiver après initalisation)
+//penser à créer les tables de données et les remplir (cf. README.md)
 
 app.get("/", (c) => {
   return c.json({ message: "Pizzas Napoli API" });
