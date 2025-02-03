@@ -1,15 +1,18 @@
 import { Hono } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { connectDatabase } from "../db/database";
+import { PizzaEntity } from "../entities";
 
 const route = new Hono();
 
-route.get("/", async (c) => {
+route.get("/", (c) => {
   try {
     const db = connectDatabase();
 
-    const query = await db.query("SELECT * FROM pizzas").as(Pizza);
+    const query = db.query("SELECT * FROM pizzas").as(PizzaEntity);
     const result = query.all();
+
+    console.log(result);
 
     return c.json({ pizzas: result }, 200);
   } catch (error) {
