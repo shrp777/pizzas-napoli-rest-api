@@ -12,8 +12,6 @@ route.get("/", (c) => {
     const query = db.query("SELECT * FROM pizzas").as(PizzaEntity);
     const result = query.all();
 
-    console.log(result);
-
     return c.json({ pizzas: result }, 200);
   } catch (error) {
     console.error(error);
