@@ -20,10 +20,12 @@ $ `bun install`
 
 $ `bun run dev`
 
-- Création des tables dans la base de données SQLite :
+## Base de données SQLite
+
+- 1 - Création des tables dans la base de données SQLite :
 $ `bun run db:createSchema`
 
-- Remplissage des tables dans la base de données SQLite :
+- 2 - Remplissage des tables dans la base de données SQLite :
 $ `bun run db:seedData`
 
 ![Pizza](./assets/pizza.png)

@@ -13,11 +13,3 @@ get {
 assert {
   res.status: eq 404
 }
-
-tests {
-  
-  test("pizza id in URL should be equal to pizza id in HTTP Response body", ()=> 
-    expect(res.getBody().pizza.id).to.equal(Number(req.url.split("/").at(-1)))
-  );
-  
-}

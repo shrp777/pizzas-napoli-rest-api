@@ -17,12 +17,15 @@ app.get("/", (c) => {
   return c.json({ message: "Pizzas Napoli API" });
 });
 
-//retourne une réponse au format JSON pour toutes les erreurs 404
-app.notFound((c) => {
-  return c.json({ message: "Error" }, 404);
-});
-
 app.route("/pizzas", pizzasEndpoint);
+
+//convertit toutes les erreurs générée avec HTTPException, du format Plain Text au format JSON
+app.onError((err, c) => {
+  if (err instanceof HTTPException) {
+    return c.json({ error: err.message }, err.status);
+  }
+  return c.json({ error: "Internal Server Error" }, 500);
+});
 
 //Erreur 405 (Method not allowed) retournée pour toutes les autres routes
 app.all("*", async (c) => {

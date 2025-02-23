@@ -10,7 +10,7 @@ route.get("/:id", ...getPizzaByIdHandler);
 
 //Erreur 405 (Method not allowed) retournée pour toutes les autres routes
 route.all("*", async (c) => {
-  throw new HTTPException(405);
+  throw new HTTPException(405, { message: "Method not allowed" });
 });
 
 export default route;

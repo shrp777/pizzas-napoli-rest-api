@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "IDMC Pizzas Napoli REST API",
+  "name": "Pizzas Napoli REST API (Hono Bun TS)",
   "type": "collection",
   "ignore": [
     "node_modules",

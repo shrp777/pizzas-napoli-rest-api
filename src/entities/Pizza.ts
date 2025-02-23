@@ -14,8 +14,8 @@ export class Pizza {
   ) {
     this.id = id;
     this.name = name;
-    this.ingredients = ingredients;
     this.base = base;
     this.price = price;
+    this.ingredients = ingredients;
   }
 }

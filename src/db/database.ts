@@ -20,7 +20,7 @@ export function createSchema() {
             id integer PRIMARY KEY NOT NULL,
             name text,
             price real,
-            ingredients blob,
+            ingredients text,
             base text
         )`;
 
