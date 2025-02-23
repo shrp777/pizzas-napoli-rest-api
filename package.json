@@ -6,11 +6,9 @@
     "db:seedData": "bun run src/db/scripts/seedData.ts"
   },
   "dependencies": {
-    "hono": "^4.6.16",
-    "uuid": "^11.0.4"
+    "hono": "^4.6.16"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "@types/uuid": "^10.0.0"
+    "@types/bun": "latest"
   }
 }
