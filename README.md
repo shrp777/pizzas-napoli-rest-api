@@ -8,9 +8,11 @@ __API REST__ proposant des fonctionnalités basiques de type CRUD, développée 
 
 - Adresse locale de l'API : <http://localhost:3000>
 
-- Consulter les tests d'intégration réalisés avec __Bruno__ ([Bruno](https://www.usebruno.com/)), cf. collection de requêtes HTTP à importer `./integration-tests/bruno.json`
+- Consulter les tests d'intégration réalisés avec __Bruno__ ([Bruno](https://www.usebruno.com/)), cf. collection de requêtes HTTP à importer `./Bruno`
 
-## Commandes utiles
+## Installation
+
+- à la racine du projet basé, création d'un fichier `.env` sur le fichier `.env.example`
 
 - Installation des dépendances NPM :
 
@@ -20,12 +22,16 @@ $ `bun install`
 
 $ `bun run dev`
 
-## Base de données SQLite
+## Initialisatoin de la Base de données SQLite
 
-- 1 - Création des tables dans la base de données SQLite :
+Exécuter ces 2 commandes dans l'ordre :
+
+- 1 : Création des tables dans la base de données SQLite :
+
 $ `bun run db:createSchema`
 
-- 2 - Remplissage des tables dans la base de données SQLite :
+- 2 : Remplissage des tables dans la base de données SQLite :
+
 $ `bun run db:seedData`
 
 ![Pizza](./assets/pizza.png)

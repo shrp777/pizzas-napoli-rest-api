@@ -14,7 +14,7 @@ app.use(logger());
 app.use(secureHeaders());
 
 app.get("/", (c) => {
-  return c.json({ message: "Pizzas Napoli API" });
+  return c.json({ message: "Pizzas Napoli REST API" });
 });
 
 app.route("/pizzas", pizzasEndpoint);

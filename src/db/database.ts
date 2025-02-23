@@ -25,7 +25,7 @@ export function createSchema() {
         )`;
 
   try {
-    db = new Database(dbPath);
+    db = connectDatabase();
     db.exec(sql);
   } catch (error) {
     console.error(error);
@@ -48,7 +48,7 @@ export function seedData() {
     `;
 
   try {
-    db = new Database(dbPath);
+    db = connectDatabase();
     db.exec(sql);
   } catch (error) {
     console.error(error);
