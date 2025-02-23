@@ -1,4 +1,4 @@
-export class PizzaEntity {
+export class Pizza {
   id: number;
   name: string;
   ingredients: string[];
