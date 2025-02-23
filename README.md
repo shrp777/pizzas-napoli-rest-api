@@ -6,6 +6,10 @@
 
 __API REST__ proposant des fonctionnalités basiques de type CRUD, développée avec __Hono__, __Bun__ et __TypeScript__.
 
+- Adresse locale de l'API : <http://localhost:3000>
+
+- Consulter les tests d'intégration réalisés avec __Bruno__ ([Bruno](https://www.usebruno.com/)), cf. collection de requêtes HTTP à importer `./integration-tests/bruno.json`
+
 ## Commandes utiles
 
 - Installation des dépendances NPM :
@@ -21,8 +25,6 @@ $ `bun run db:createSchema`
 
 - Remplissage des tables dans la base de données SQLite :
 $ `bun run db:seedData`
-
-Adresse locale de l'API : <http://localhost:3000>
 
 ![Pizza](./assets/pizza.png)
 
