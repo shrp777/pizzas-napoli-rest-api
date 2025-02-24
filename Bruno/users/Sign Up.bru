@@ -1,0 +1,22 @@
+meta {
+  name: Sign Up
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/users/sign-up
+  body: json
+  auth: none
+}
+
+body:json {
+  {"firstname":"John","lastname":"Doe","email":"john@doe.com","password":"azerty"}
+}
+
+assert {
+  res.body.user: isDefined
+  res.body.user.id: isString
+  res.status: eq 201
+  res.header.location: isDefined
+}

@@ -1,0 +1,38 @@
+meta {
+  name: Create Order with multiple items
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/orders
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "userId": "dbc73a3d-693d-4180-b36a-5b2ccef384d8",
+    "amount": 25,
+    "orderItems": [
+      {
+        "pizzaId": 1,
+        "unitPrice": 7,
+        "quantity": 1,
+        "amount": 7
+      },
+      {
+        "pizzaId": 2,
+        "unitPrice": 6,
+        "quantity": 3,
+        "amount": 18
+      }
+    ]
+  }
+}
+
+assert {
+  res.status: eq 201
+  res.header.location: isDefined
+  res.body.order: isDefined
+}
