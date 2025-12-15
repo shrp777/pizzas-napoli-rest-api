@@ -12,7 +12,7 @@ __API REST__ proposant des fonctionnalités basiques de type CRUD, développée 
 
 ## Installation
 
-- à la racine du projet basé, création d'un fichier `.env` sur le fichier `.env.example`
+- à la racine du projet, création d'un fichier `.env` basé sur le fichier `.env.example`
 
 - Installation des dépendances NPM :
 
@@ -22,7 +22,7 @@ $ `bun install`
 
 $ `bun run dev`
 
-## Initialisatoin de la Base de données SQLite
+## Initialisation de la Base de Données SQLite
 
 Exécuter ces 2 commandes dans l'ordre :
 
